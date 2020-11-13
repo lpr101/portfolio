@@ -65,4 +65,12 @@
             width: 90%;
         }
     }
+    .contacts {
+        &__link {
+            color: $wow-color;
+            &:hover {
+                color: $wow-color;
+            }
+        }
+    }
 }
