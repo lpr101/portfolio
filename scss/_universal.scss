@@ -1,0 +1,37 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    color: $main-color;
+}
+
+html, body {
+	height: 100%;
+}
+
+main {
+    min-height: calc(100% - 175px);
+    padding: 42px 0 50px;
+}
+
+body, div, p, h1, h2, h3, button {
+    margin: 0;
+    padding: 0;
+}
+
+section, div, form, button, a, p, main, footer, header {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.red {
+    color: $wow-color !important;
+}
+
+body {
+    background: #090909;
+}

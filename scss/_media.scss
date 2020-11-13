@@ -1,0 +1,68 @@
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+    html {
+        font-size: 16px;
+    }
+    #portfolio:target, #about:target, #contacts:target {
+        -webkit-animation: none;
+                animation: none;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .header {
+        &__box {
+            display: block;
+        }
+        &__title {
+            width: auto
+        }
+    }
+
+    .section {
+        &__title {
+            text-align: center;
+        }
+    }
+
+    .portfolio {
+        &__item {
+            width: 500px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (max-width: 765px) {
+    html {
+        font-size: 14px;
+    }
+
+    .header {
+        &__box {
+            padding-left: 0;
+            text-align: right;
+        }
+        &__menu {
+            justify-content: flex-end;
+        }
+    }
+
+    .about__img {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: 100%;
+    }
+
+    .portfolio {
+        &__item {
+            width: 90%;
+        }
+    }
+}

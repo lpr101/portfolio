@@ -1,0 +1,164 @@
+@import "_normalize.scss";
+@import "_variables.scss";
+@import "_universal.scss";
+@import "_animations.scss";
+@import "_media.scss";
+
+.header {
+    &__box {
+        background: url(../img/bg.svg) left center/contain no-repeat;
+        height: 175px;
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 0 0 35%;
+    }
+    &__name {
+        font-weight: 700;
+    }
+    &__title {
+        font-size: 2.67rem;
+        width: 230px;
+        margin-bottom: 32px;
+    }
+    &__subtitle {
+        font-size: 1.22rem;
+        margin-bottom: 32px;
+    }
+    &__menu {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+    }
+}
+
+.menu {
+    &__link {
+        display: block;
+        color: $main-color;
+        letter-spacing: 0.085em;
+        margin: 0 15px;
+        text-decoration: none;
+        &:hover {
+            color: $wow-color;
+        }
+    }
+}
+
+.section {
+    display: none;
+    &__title {
+        font-weight: 700;
+        font-size: 2.22rem;
+        margin-bottom: 25px;
+    }
+    &__subtitle {
+        font-weight: 700;
+        font-size: 1.22rem;
+        margin-bottom: 25px;
+    }
+    &__desc {
+        line-height: 26px;
+        margin-bottom: 25px;
+    }
+}
+
+.portfolio {
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__item {
+        width: 44%;
+        text-align: center;
+        margin-top: 40px;
+    }
+    &__img {
+        border-radius: 10px;
+        display: block;
+        min-height: 500px;
+        transition: background-position 3s;
+        margin-bottom: 25px;
+        &_1 {
+            background: url(../img/project1.jpg) center top / cover no-repeat;
+        }
+        &_2 {
+            background: url(../img/project2.jpg) center top / cover no-repeat;
+        }
+        &_3 {
+            background: url(../img/project3.jpg) center top / cover no-repeat;
+        }
+        &_4 {
+            background: url(../img/project4.jpg) center top / cover no-repeat;
+        }
+        &_5 {
+            background: url(../img/project5.jpg) center top / cover no-repeat;
+        }
+        &:hover {
+            background-position: center bottom;
+        }
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 1.22rem;
+        margin-bottom: 12px;
+    }
+    &__link {
+        text-decoration: none;
+        color: $main-color;
+    }
+}
+
+.about {
+    &__img {
+        display: block;
+        width: 32%;
+        margin: 0 auto 25px;
+        border-radius: 10px;
+    }
+    &__box {
+        text-align: center;
+    }
+}
+
+.contacts {
+    &__box {
+        display: flex;
+    }
+    &__type {
+        font-size: 1.22rem;
+        font-weight: 400;
+    }
+    &__link {
+        font-size: 1.22rem;
+        font-weight: 100;
+        margin: 10px 0 30px;
+        display: block;
+        text-decoration: none;
+        color: $main-color;
+        &:hover {
+            color: $wow-color;
+        }
+    }
+}
+
+.fas, .fab {
+    padding-right: 10px;
+    font-size: 58px;
+}
+
+.fa-whatsapp {
+    font-size: 65px;
+}
+
+#portfolio:target, #about:target, #contacts:target {
+    display: block;
+    -webkit-animation: slide-in-right 2s both;
+	        animation: slide-in-right 2s both;
+}
+
+.footer {
+    height: 50px;
+    padding-top: 25px;
+    margin-top: -50px;
+}
