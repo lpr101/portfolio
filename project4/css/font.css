@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'MrsEavesItalic';
+    src: url('../fonts/MrsEavesItalic.eot');
+    src: local('../fonts/MrsEavesItalic Italic'), local('MrsEavesItalic'),
+        url('../fonts/MrsEavesItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MrsEavesItalic.woff2') format('woff2'),
+        url('../fonts/MrsEavesItalic.woff') format('woff'),
+        url('../fonts/MrsEavesItalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'UniversCE';
+    src: url('../fonts/UniversCE-Light.eot');
+    src: local('../fonts/Univers CE 45 Light'), local('UniversCE-Light'),
+        url('../fonts/UniversCE-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/UniversCE-Light.woff2') format('woff2'),
+        url('../fonts/UniversCE-Light.woff') format('woff'),
+        url('../fonts/UniversCE-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'SegoeWPN';
+    src: url('../fonts/SegoeWPN-Light.eot');
+    src: local('../fonts/Segoe WP N Light'), local('SegoeWPN-Light'),
+        url('../fonts/SegoeWPN-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SegoeWPN-Light.woff2') format('woff2'),
+        url('../fonts/SegoeWPN-Light.woff') format('woff'),
+        url('../fonts/SegoeWPN-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SegoeWP';
+    src: url('../fonts/SegoeWP-Light.eot');
+    src: local('../fonts/Segoe WP Light'), local('SegoeWP-Light'),
+        url('../fonts/SegoeWP-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SegoeWP-Light.woff2') format('woff2'),
+        url('../fonts/SegoeWP-Light.woff') format('woff'),
+        url('../fonts/SegoeWP-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SegoeWPN';
+    src: url('../fonts/SegoeWPN.eot');
+    src: local('../fonts/Segoe WP N'), local('SegoeWPN'),
+        url('../fonts/SegoeWPN.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SegoeWPN.woff2') format('woff2'),
+        url('../fonts/SegoeWPN.woff') format('woff'),
+        url('../fonts/SegoeWPN.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
