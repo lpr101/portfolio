@@ -1,8 +1,6 @@
 @import "_normalize.scss";
 @import "_variables.scss";
 @import "_universal.scss";
-@import "_animations.scss";
-@import "_media.scss";
 
 .header {
     &__box {
@@ -162,3 +160,6 @@
     padding-top: 25px;
     margin-top: -50px;
 }
+
+@import "_animations.scss";
+@import "_media.scss";
