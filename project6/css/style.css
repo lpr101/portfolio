@@ -817,6 +817,7 @@ section, div, form, input, button, a, p, li {
 }
 
 .fetured-items__btn {
+  margin: 0 auto;
   display: block;
   width: 212px;
   height: 48px;
@@ -829,8 +830,6 @@ section, div, form, input, button, a, p, li {
   line-height: 48px;
   -webkit-transition: background-color 0.4s ease, color 0.4s ease, border 0.4s ease;
   transition: background-color 0.4s ease, color 0.4s ease, border 0.4s ease;
-  -webkit-animation: browseForAll 5s alternate infinite;
-          animation: browseForAll 5s alternate infinite;
 }
 
 .fetured-items__btn:hover {
@@ -1046,62 +1045,6 @@ section, div, form, input, button, a, p, li {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-@-webkit-keyframes browseForAll {
-  0% {
-    width: 212px;
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-  25% {
-    width: 675px;
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-  50% {
-    width: 212px;
-    -webkit-transform: translate(463px, 0);
-            transform: translate(463px, 0);
-  }
-  75% {
-    width: 675px;
-    -webkit-transform: translate(463px, 0);
-            transform: translate(463px, 0);
-  }
-  100% {
-    width: 212px;
-    -webkit-transform: translate(926px, 0);
-            transform: translate(926px, 0);
-  }
-}
-
-@keyframes browseForAll {
-  0% {
-    width: 212px;
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-  25% {
-    width: 675px;
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-  50% {
-    width: 212px;
-    -webkit-transform: translate(463px, 0);
-            transform: translate(463px, 0);
-  }
-  75% {
-    width: 675px;
-    -webkit-transform: translate(463px, 0);
-            transform: translate(463px, 0);
-  }
-  100% {
-    width: 212px;
-    -webkit-transform: translate(926px, 0);
-            transform: translate(926px, 0);
-  }
 }
 
 /* сквозные стили footer */
