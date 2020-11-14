@@ -1,0 +1,204 @@
+/* сквозные стили footer */
+
+.contacts {
+    background: url(../img/bg5.jpg) center center/cover no-repeat;
+    &__box {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.feedback {
+    flex-basis: calc(50% - 0.5px);
+    padding-right: 72px;
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        margin: 111px 0 41px;
+    }
+    &_img {
+        height: 83px;
+        margin-right: 10px;
+    }
+    &__text {
+        margin-top: 12px;
+        max-width: 386px;
+    }
+    &__desc {
+        color: #222224;
+        font-size: 1.14rem;
+        font-style: italic;
+        line-height: 26px;
+    }
+    &__author {
+        margin-top: 19px;
+        color: #222224;
+        font-size: 0.86rem;
+        line-height: 14px;
+        &_big {
+            font-size: 1.14rem;
+            font-weight: 700;
+            line-height: 26px;
+        }
+    }
+}
+
+.slider {
+    display: flex;
+    margin-left: 112px;
+    &__line {
+        width: 38px;
+        height: 4px;
+        background-color: #d6d6d6;
+        margin-right: 13px;
+        cursor: pointer;
+        transition: background-color $time;
+        &_activ, &:hover {
+            background-color: $main-color;
+        }
+    }
+}
+
+.subscribe {
+    flex-basis: calc(50% - 0.5px);
+    padding: 148px 0 158px;
+    border-left: 1px solid $white;
+    text-align: center;
+    font-weight: 400;
+    color: #222224;
+    text-transform: uppercase;
+    &__title {
+        font-size: 24px;
+        margin-bottom: 14px;
+    }
+    &__form {
+        margin-top: 35px;
+        display: flex;
+        justify-content: center;
+    }
+    &__input {
+        border-radius: 23px 0 0 23px;
+        background-color: #e1e1e1;
+        max-width: 282px;
+        height: 46px;
+        padding: 0 28px;
+        opacity: 0.67;
+        color: #222224;
+        font-weight: 400;
+        border: none;
+        line-height: 46px;
+        &::placeholder {
+            opacity: 1;
+            color: #222224;
+            font-weight: 400;
+            transition: opacity $time;
+        }
+        &:focus::placeholder {
+            opacity: 0;
+        }
+    }
+    &__btn {
+        border-radius: 0 23px 23px 0;
+        background-color: $main-color;
+        border: none;
+        width: 104px;
+        height: 46px;
+        color: $white;
+        font-weight: 400;
+        text-align: center;
+        cursor: pointer;
+        transition: background-color $time, color $time, border $time;
+        &:hover {
+            background-color: $white;
+            color: $main-color;
+            border: 1px solid $main-color;
+        }
+    }
+}
+
+.footer {
+    &__top {
+        margin: 109px 0 89px;
+        @include fsb-wrap;
+    }
+    &__title {
+        color: $main-color;
+        font-size: 1.29rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    &__list {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 45px;
+    }
+    &__links {
+        text-decoration: none;
+        color: #898989;
+        font-size: 1.14rem;
+        font-weight: 400;
+        line-height: 42px;
+        transition: opacity $time;
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+    &__bottom {
+        background-color: #e6e6e6;
+    }
+    &__block {
+        @include fsb-wrap;
+        align-items: center;
+        line-height: 79px;
+    }
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 38%;
+    &__text {
+        margin-top: 20px;
+        color: #898989;
+        line-height: 24px;
+        max-height: 192px;
+        overflow: hidden;
+    }
+}
+
+.company, .information, .categories {
+    flex-basis: 14%;
+}
+
+.copy {
+    color: #7a7a7a;
+    font-size: 1.14rem;
+    font-weight: 400;
+}
+
+.fab {
+    transition: color $time;
+}
+
+.socials {
+    display: flex;
+    width: 192px;
+    justify-content: space-between;
+    &__btn {
+        display: block;
+        width: 32px;
+        height: 32px;
+        background-color: $white;
+        color: #b2b2b2;
+        font-size: 1.14rem;
+        text-align: center;
+        line-height: 32px;
+        transition: background-color $time;
+        &:hover {
+            background-color: $main-color;
+        }
+        &:hover .fab {
+            color: $white;
+        }
+    }
+}

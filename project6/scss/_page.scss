@@ -1,0 +1,192 @@
+/* свойства страницы page.html */
+
+.slider-arrow {
+    display: block;
+    text-align: center;
+    line-height: 47px;
+    width: 47px;
+    height: 47px;
+    margin-top: 365px;
+    background-color: #d8d8d8;
+    text-decoration: none;
+    color: $white;
+    transition: color $time, background-color $time;
+    &:hover {
+        color: $main-color;
+        background-color: #f7f7f7;
+    }
+}
+
+.main-product {
+    position: relative;
+    max-width: 1140px;
+    border: $main-border;
+    background-color: $white;
+    margin: -85px auto 119px;
+    z-index: 2;
+    padding: 73px 250px 122px;
+    text-align: center;
+    &__img {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        border: $main-border;
+        background-color: #f7f7f7;
+        text-align: center;
+        padding: 11px 0 42px;
+        z-index: 1;
+        &_bg {
+            width: 100%;
+            max-width: 597px;
+        }
+    }
+    &__catalog {
+        position: relative;
+        display: inline-block;
+        color: $main-color;
+        font-weight: 700;
+        @include tt;
+        padding-bottom: 15px;
+        border-bottom: $main-border;
+    }
+    &__line {
+        position: relative;
+        width: 63px;
+        height: 3px;
+        background-color: $second-color;
+        margin: -2px auto 17px;
+        z-index: 3;
+    }
+    &__title {
+        color: #4d4d4d;
+        font-size: 1.29rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        margin-bottom: 62px;
+    }
+    &__desc {
+        color: #5e5e5e;
+        line-height: 24px;
+    }
+    &__type {
+        display: flex;
+        justify-content: center;
+        margin: 28px -22px 37px;
+    }
+    &__spec {
+        color: #b9b9b9;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0 22px;
+        &_true {
+            color: #2f2f2f;
+        }
+    }
+    &__price {
+        color: $second-color;
+        font-size: 1.71rem;
+        font-weight: 700;
+        padding-bottom: 43px;
+        border-bottom: $main-border;
+    }
+    &__options {
+        margin: 53px -26px 18px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    &__choose {
+        flex-basis: 144px;
+        margin: 10px 0;
+        &_title {
+            color: #2f2f2f;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+        &_color, &_size {
+            position: relative;
+            width: 144px;
+            height: 35px;
+            border: $main-border;
+            padding-left: 16px;
+            color: #bcbcbc;
+            font-size: 0.93rem;
+            font-weight: 400;
+            margin: 0 26px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -ms-appearance: none;
+            appearance: none;
+            outline: none;
+            background: $white url(../img/select-arrow.png) 90% center no-repeat;
+        }
+        &_color {
+            padding-left: 37px;
+            &::before {
+                content: '';
+                display: block;
+                width: 12px;
+                height: 12px;
+                background-color: $second-color;
+                position: absolute;
+                top: 0;
+                left: 10px;
+            }
+        }
+        &_size {
+            text-transform: uppercase;
+        }
+    }
+    &__input {
+        width: 144px;
+        height: 35px;
+        border: $main-border;
+        padding-left: 16px;
+        color: #bcbcbc;
+        font-size: 0.93rem;
+        font-weight: 400;
+        margin: 0 26px;
+    }
+}
+
+.add-to-cart {
+    &__text::before {
+        content: '';
+        display: inline-block;
+        background: url(../img/cart_mini_pink.png);
+        width: 26px;
+        height: 24px;
+        margin-right: 15px;
+        transition: background $time;
+    }
+    &__btn {
+        display: block;
+        width: 78%;
+        height: 55px;
+        border: 1px solid $second-color;
+        background-color: $white;
+        color: $second-color;
+        font-size: 1.14rem;
+        font-weight: 700;
+        margin: 20px auto 0;
+        line-height: 55px;
+        transition: color $time, background-color $time;
+        &:hover {
+            background-color: $second-color;
+            color: $white;
+        }
+        &:hover>.add-to-cart__text::before {
+            background: url(../img/cart_mini.png);
+        }
+    }
+}
+
+.fetured-items__title {
+    color: #4d4d4d;
+    font-size: 1.71rem;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 72px;
+}

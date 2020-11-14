@@ -1,0 +1,45 @@
+/* свойства breadcrumbs - хлебные крошки */
+
+.main-title {
+    margin: 10px 0;
+    color: $main-color;
+    font-size: 1.71rem;
+    font-weight: 900;
+    margin-left: auto;
+	flex-grow: 0.5;
+}
+
+.breadcrumbs {
+    background-color: #f8f3f4;
+    padding: 55px 0;
+    &__box {
+        @include fsb-wrap;
+        align-items: center;
+    }
+    &__list {
+        margin: 10px 0;
+        list-style: none;
+        flex-grow: 0.5;
+        text-align: right;
+    }
+    &__item {
+        margin-right: 2px;
+        display: inline;
+        &:not(:last-child):after {
+            content: "/";
+            margin-left: 2px;
+        }
+    }
+    &__link {
+        color: #636363;
+        @include tt;
+        &_current {
+            color: $main-color;
+            font-weight: 700;
+            cursor: default;
+        }
+        &:not(.breadcrumbs__link_current):hover {
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+$main-color: #f16d7f;
+$second-color: #ef5b70;
+$black: #222222;
+$white: #ffffff;
+$time: 0.4s ease;
+$main-border: 1px solid #eaeaea;
+$second-border: 1px solid #e6e6e6;
+
+@mixin fsb-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@mixin tt {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+@mixin ttc {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+}

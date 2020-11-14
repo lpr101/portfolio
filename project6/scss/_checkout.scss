@@ -1,0 +1,179 @@
+/* свойства страницы checkout.html */
+
+.fa-angle-double-right {
+    color: #b3b2b2;
+    font-size: 12px;
+}
+
+.warning {
+    color: #ff0d0d;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.tab {
+    display: block;
+    width: 160px;
+    margin-bottom: 17px;
+    color: $black;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 17px;
+    padding-left: 27px;
+    cursor: pointer;
+    position: relative;
+    &::before {
+        content: '';
+        display: block;
+        width: 13px;
+        height: 13px;
+        border: 2px solid #555555;
+        background-color: $white;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        transition: border 0.1s linear;
+    }
+    &::after {
+        content: '';
+        display: block;
+        width: 9px;
+        height: 9px;
+        background-color:#555555;
+        border-radius: 50%;
+        opacity: 0;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        z-index: 2;
+        transition: opacity 0.1s linear;
+    }
+    &__content {
+        margin-top: 35px;
+        display: none;
+        &_specs {
+            margin-top: 33px;
+            list-style-type: none;
+        }
+        &_text {
+            color: #b3b2b2;
+            font-size: 0.93rem;
+            font-weight: 400;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.checkout {
+    margin: 53px 0 90px;
+    &__title {
+        color: $black;
+        font-size: 1.14rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 32px 0 29px;
+        &::-webkit-details-marker {
+            display: none;
+        }
+    }
+    &__box {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -30px;
+        padding: 32px 0 0;
+    }
+    &__line {
+        height: 3px;
+        background-color: #e8e8e8;
+    }
+    &__type {
+        padding: 0 35px;
+        flex-basis: 40%;
+        margin: 0 30px;
+        &_title {
+            color: $black;
+            font-size: 0.93rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+        &_desc {
+            color: #b3b2b2;
+            font-size: 0.93rem;
+            font-weight: 400;
+        }
+        &_form {
+            margin-top: 34px;
+            position: relative;
+        }
+        &_tab {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            position: absolute;
+            &:checked + .tab:after {
+                opacity: 1;
+            }
+        }
+        &_btn {
+            width: 183px;
+            height: 53px;
+            margin-top: 36px;
+            border: $main-border;
+            color: #4a4a4a;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 29px;
+            background-color: $white;
+            cursor: pointer;
+            transition: background-color $time, color $time;
+            &:hover {
+                background-color: $main-color;
+                color: $white;
+            }
+        }
+    }
+    &__input {
+        &_form {
+            margin-top: 27px;
+        }
+        &_title {
+            margin: 14px 0;
+            color: $black;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        &_box {
+            width: 393px;
+            height: 48px;
+            border: $main-border;
+            background-color: $white;
+            line-height: 48px;
+            padding: 0 15px;
+        }
+        &_warning {
+            margin-top: 21px;
+            color: #ff0d0d;
+            font-size: 13px;
+            font-weight: 700;
+        }
+    }
+    &__pas-forgot {
+        color: $black;
+        font-weight: 700;
+        margin-left: 31px;
+        text-decoration: none;
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+}
+
+#tab1:checked ~ .tab__content_1, #tab2:checked ~ .tab__content_2 {
+	display: block;
+}

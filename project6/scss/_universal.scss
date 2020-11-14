@@ -1,0 +1,26 @@
+/* универсальные свойства */
+
+html {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1;
+}
+
+body, div, p, h1, h2, h3, ul, button {
+    margin: 0;
+    padding: 0;
+}
+
+section, div, form, input, button, a, p, li {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.pink {
+    color: $main-color !important;
+}
