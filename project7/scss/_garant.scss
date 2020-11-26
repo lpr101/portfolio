@@ -1,0 +1,46 @@
+.garant {
+    padding: 27px 21px;
+    &__slider {
+        margin: 15px -12px 0;
+        @include fsb;
+    }
+    &__arrow {
+        margin-top: -128px;
+    }
+    &__box {
+        display: flex;
+        flex-direction: column;
+        &_2, &_3 {
+            display: none;
+        }
+    }
+    &__desc {
+        height: 62px;
+        display: flex;
+        align-items: center;
+    }
+    &__img {
+        width: 62px;
+        height: 62px;
+        border-radius: 50%;
+        background: #F7F7F7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__icon {
+        width: 50%;
+    }
+    &__name {
+        margin-left: 10px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    &__text {
+        margin: 15px 0;
+        line-height: 15px;
+    }
+    &__btn {
+        width: 100%;
+    }
+}

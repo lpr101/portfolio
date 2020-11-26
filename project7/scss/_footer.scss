@@ -1,0 +1,42 @@
+.footer {
+    padding: 17px 21px;
+    background: #E9E9E9;
+    &__menu {
+        margin: 17px 0;
+        padding: 17px 0;
+        border-top: 1px solid #C4C4C4;
+        border-bottom: 1px solid #C4C4C4;
+        @include fsb;
+        align-items: center;
+    }
+    &__bottom {
+        @include fsb;
+    }
+    &__text {
+        font-size: 10px;
+    }
+    &__socials {
+        display: none;
+        &_fb, &_inst, &_vk {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: $default-blue;
+            color: #fff;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 16px;
+            @include actions;
+            & img {
+                width: 50%;
+            }
+        }
+        &_vk {
+            & img {
+                width: 70%;
+            }
+        }
+    }
+}

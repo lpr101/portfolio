@@ -1,0 +1,178 @@
+.offer {
+    padding: 27px 21px;
+    background: url(../img/bg1_mob.jpg) center top no-repeat;
+    min-height: 288px;
+    &__title {
+        margin-top: 230px;
+        font-size: 32px;
+        line-height: 38px;
+        font-weight: 900;
+    }
+    &__subtitle {
+        margin: 10px 0 20px;
+        font-size: 23px;
+        font-weight: 700;
+    }
+}
+
+.header {
+    @include fsb-wrap;
+    align-items: center;
+}
+
+.logo {
+    display: block;
+    width: 100px;
+    height: 29px;
+    & img {
+        width: 100%;
+    }
+}
+
+.menu {
+    &__list {
+    display: none;
+    list-style: none;
+    }
+    &__link {
+        text-decoration: none;
+        font-size: 14px;
+        color: #fff;
+        padding: 0 5px;
+        &_foot {
+            color: #000; 
+            padding: 0 2px;
+        }
+    }
+}
+
+.nav {
+    position: relative;
+    &__overlay {
+        position: fixed;
+        width: 100%;
+        min-height: 616px;
+        background: #fff;
+        top: -200%;
+        left: 0;
+        padding: 13px 21px 28px;
+        display: flex;
+        flex-direction: column;
+        transition: top 1s ease;
+    }
+    &__checkbox {
+        &:checked ~ .nav__overlay {
+            top: 0;
+        }
+        &:checked + .backdrop {
+            top: 0;
+            opacity: 1;
+        }
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+    &__link {
+        text-decoration: none;
+        padding: 10px 0;
+        display: block;
+        font-size: 18px;
+        transition: color $time;
+        color: #000;
+    }
+    &__open {
+        display: block;
+        margin-top: -8px;
+        width: 40px;
+        height: 29px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 41px;
+        align-self: center;
+        &_foot {
+            color: $text-color;
+        }
+    }
+    &__close {
+        display: block;
+        color: $text-color;
+        font-size: 42px;
+        align-self: center;
+        cursor: pointer;
+    }
+}
+
+.overlay {
+    &__header {
+        @include fsb;
+        margin-bottom: 11px;
+    }
+    &__socials {
+        margin-top: 24px;
+        @include fsb;
+        &_fb, &_inst, &_vk {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: $default-blue;
+            color: #fff;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include actions;
+            & img {
+                width: 50%;
+            }
+        }
+        &_vk {
+            & img {
+                width: 70%;
+            }
+        }
+    }
+}
+
+.contact {
+    &__titel {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 38px;
+        color: #000;
+    }
+    &__tel {
+        width: 100%;
+        height: 40px;
+        padding: 0 23px;
+        border: 1px solid $text-color;
+        border-radius: 30px;
+        background-color: transparent;
+        font-size: 14px;
+        line-height: 40px;
+        color: #000;
+        margin-bottom: 10px;
+        &::placeholder {
+            color: $text-color;
+            transition: opacity $time;
+        }
+        @include ph-hidden;
+    }
+    &__btn {
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        text-transform: uppercase;
+    }
+    &__terms {
+        margin-top: 12px;
+        display: flex;
+    }
+    &__checkbox {
+        padding-left: 10px;
+        vertical-align: middle;
+        color: #9E9E9E;
+    }
+}

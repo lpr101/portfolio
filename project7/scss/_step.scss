@@ -1,0 +1,31 @@
+.step {
+    padding: 27px 21px;
+    @include fsb-wrap;
+    &__item {
+        margin: 20px 0;
+        min-height: 301px;
+        width: 100%;
+        &_1 {
+            background: url(../img/item1_pad.png) center top/contain no-repeat;
+        }
+        &_2 {
+            background: url(../img/item2_pad.png) center top/contain no-repeat;
+        }
+        &_3 {
+            background: url(../img/item3_pad.png) center top/contain no-repeat;
+        }
+        &_4 {
+            background: url(../img/item4_pad.png) center top/contain no-repeat;
+        }
+    }
+    &__title {
+        margin-top: 200px;
+        font-size: 26px;
+        font-weight: 600;
+    }
+    &__text {
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+}

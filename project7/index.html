@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SendIt</title>
+    <script src="https://kit.fontawesome.com/747a53ae8a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="offer">
+        <header class="header">
+            <a href="index.html" class="logo"><img src="icons/logo1.png" alt="Логотип"></a>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item_1"><a href="index.html" class="menu__link">Главная</a></li>
+                    <li class="menu__item_2"><a href="#about" class="menu__link">Описание</a></li>
+                    <li class="menu__item_3"><a href="#advantage" class="menu__link">Преимущества</a></li>
+                    <li class="menu__item_4"><a href="#feedback" class="menu__link">Отзывы</a></li>
+                    <li class="menu__item_5"><a href="#partners" class="menu__link">Партнёры</a></li>
+                    <li class="menu__item_6"><a href="#garant" class="menu__link">Гарантии</a></li>
+                    <li class="menu__item_7"><a href="#faq" class="menu__link">FAQ</a></li>
+                </ul>
+                <input type="checkbox" id="nav__checkbox" class="nav__checkbox hidden">
+                <div class="backdrop"></div>
+                <div class="nav__overlay">
+                    <div class="overlay__header">
+                        <a href="index.html"><img src="icons/logo2.png" alt="Логотип"></a>
+                        <label for="nav__checkbox" class="nav__close">&#10006;</label>
+                    </div>
+                    <ul class="nav__list">
+                      <li><a href="index.html" class="nav__link">Главная</a></li>
+                      <li><a href="#about" class="nav__link">Описание</a></li>
+                      <li><a href="#advantage" class="nav__link">Преимущества</a></li>
+                      <li><a href="#feedback" class="nav__link">Отзывы</a></li>
+                      <li><a href="#partners" class="nav__link">Партнёры</a></li>
+                      <li><a href="#garant" class="nav__link">Гарантии</a></li>
+                      <li><a href="#faq" class="nav__link">FAQ</a></li>
+                    </ul>
+                    <form action="#" class="contact__form">
+                        <p class="contact__titel">ОСТАЛИСЬ ВОПРОСЫ?</p>
+                        <input type="tel" class="contact__tel" placeholder="Ваш телефон">
+                        <button class="btn contact__btn" type="submit">заказать звонок</button>
+                        <div class="contact__terms">
+                            <input type="checkbox" id="terms">
+                            <label for="terms" class="contact__checkbox">Я согласен на обработку персональных данных</label>
+                        </div>
+                    </form>
+                    <div class="overlay__socials">
+                        <a href="#" class="overlay__socials_vk"><img src="icons/vk.svg" alt="vk"></a>
+                        <a href="#" class="overlay__socials_inst"><img src="icons/instagram-symbol.svg" alt="in"></a>
+                        <a href="#" class="overlay__socials_fb"><img src="icons/facebook.svg" alt="fb"></a>
+                    </div>
+                </div>
+            </nav>
+            <label for="nav__checkbox" class="nav__open">&#9776;</label>
+        </header>
+        <p class="offer__title">
+            ПРИДУМАЙТЕ ЧТО ОТПРАВИТЬ
+        </p>
+        <p class="offer__subtitle">А посылка доедет сама</p>
+        <button class="btn">отправить посылку</button>
+    </div>
+    <section class="about" id="about">
+        <div class="about__bg">
+            <h1 class="about__title">Мы – агрегатор служб доставки</h1>
+            <div class="about__img"></div>
+            <div class="about__box">
+                <p class="about__text">С нами удобно вам, вашим клиентам и курьерским службам.<br class="br"> Для вас наши услуги бесплатны, так как мы получаем бонусы от служб доставок за предоставленный объем заказов, а вы получаете надежный сервис в подарок!</p>
+                <button class="btn">отправить посылку</button>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <h2 class="hidden">Шаги</h2>
+        <div class="step__item step__item_1">
+            <h3 class="step__title">Шаг 1</h3>
+            <p class="step__text">Придумайте что и кому отправить</p>
+        </div>
+        <div class="step__item step__item_2">
+            <h3 class="step__title">Шаг 2</h3>
+            <p class="step__text">Создайте заявку на сайте SendIt - Ваш персональный менеджер позвонит и подтвердит запрос, уточнит все необходимые данные</p>
+        </div>
+        <div class="step__item step__item_3">
+            <h3 class="step__title">Шаг 3</h3>
+            <p class="step__text">К Вам приезжает курьер, забирает посылку, Вы подписываете один документ</p>
+        </div>
+        <div class="step__item step__item_4">
+            <h3 class="step__title">Шаг 4</h3>
+            <p class="step__text">Вы ждёте подтверждения доставки, слова радости и благодарности от адресата :)</p>
+        </div>
+    </section>
+    <div class="invocation">
+        <p class="invocation__text">Мы берём все заботы по доставке на себя!</p>
+        <button class="btn">отправить посылку</button>
+    </div>
+    <section class="call">
+        <div class="call__box">
+            <h2 class="titel call__titel">хотите мы вам перезвоним?</h2>
+            <p class="call__text">Закажите звонок, и менеджер вам всё расскажет и объяснит</p>
+        </div>
+        <form action="#" class="call__form">
+        <input type="tel" class="call__tel" placeholder="Ваш телефон">
+        <button class="btn call__btn" type="submit">заказать звонок</button>
+        <div class="call__terms">
+            <input type="checkbox" id="call_terms" class="call__check hidden">
+            <label for="call_terms" class="call__checkbox">Я согласен на обработку персональных данных</label>
+        </div>
+        </form>
+    </section>
+    <section class="feedback" id="feedback">
+        <h2 class="titel">ОТЗЫВЫ</h2>
+        <div class="feedback__slider">
+            <button class="arrow feedback__arrow"><i class="fas fa-chevron-left"></i></button>
+            <div class="feedback__box">
+                 <div class="feedback__desc feedback__desc_1">
+                    <h3 class="feedback__name">Дарья</h3>
+                    <div class="feedback__firm">La Intuicion</div>
+                    <p class="feedback__post">Посылка: товары</p>
+                    <p class="feedback__post">Откуда: Москва</p>
+                    <p class="feedback__post">Куда: Нижневартовск</p>
+                </div>
+                <p class="feedback__text">
+                    Отличный и качественный сервис. Долго искали курьерскую службу для доставки наших товаров. Решили попробовать и были приятно удивлены, что помимо удобного сайта, компания предоставляет доступ в личный кабинет, где реализованы многие наши потребности (ведение адресной базы, выбор и вызов курьера в пару кликов).
+                </p>
+            </div>
+            <div class="feedback__box feedback__box_pad">
+                <div class="feedback__desc feedback__desc_2">
+                   <h3 class="feedback__name">Елена</h3>
+                   <div class="feedback__firm">Global Logic</div>
+                   <p class="feedback__post">Посылка: товары</p>
+                   <p class="feedback__post">Откуда: Москва</p>
+                   <p class="feedback__post">Куда: Калининград</p>
+               </div>
+               <p class="feedback__text">
+                    Мне нравится работать с SendIt, потому что это удобно: моментальный расчет стоимости доставки, удобный сайт, выборка среди основных надёжных логистических компаний и самый значимый фактор – всё это можно оперативно организовать и не волноваться. И ещё хочу сказать отдельное спасибо менеджеру за отзывчивость.
+               </p>
+           </div>
+            <button class="arrow feedback__arrow"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+    <section class="advantage" id="advantage">
+        <h2 class="titel">НАШИ ПРЕИМУЩЕСТВА</h2>
+        <div class="advantage__box">
+            <div class="advantage__item">
+                <div class="advantage__img">
+                    <img src="icons/icon-car.png" alt="авто" class="advantage__icon advantage__icon_car">
+                </div>
+                <p class="advantage__text">Бесплатный сервис</p>
+            </div>
+            <div class="advantage__item">
+                <div class="advantage__img">
+                    <img src="icons/icon-list.svg" alt="выбор" class="advantage__icon">
+                </div>
+                <p class="advantage__text">Огромный выбор вариантов доставки</p>
+            </div>
+            <div class="advantage__item">
+                <div class="advantage__img">
+                    <img src="icons/icon-star.svg" alt="звезда" class="advantage__icon">
+                </div>
+                <p class="advantage__text">4 параметра лучшего предложения</p>
+            </div>
+            <div class="advantage__item">
+                <div class="advantage__img">
+                    <img src="icons/icon-hand.svg" alt="удобство" class="advantage__icon">
+                </div>
+                <p class="advantage__text">Удобство заказа</p>
+            </div>
+            <div class="advantage__item">
+                <div class="advantage__img">
+                    <img src="icons/icon-online.svg" alt="поддержка" class="advantage__icon">
+                </div>
+                <p class="advantage__text">Online-поддержка</p>
+            </div>
+            <div class="advantage__item">
+                <div class="advantage__img">
+                    <img src="icons/icon-qr.svg" alt="qr" class="advantage__icon">
+                </div>
+                <p class="advantage__text">Единый номер отслеживания</p>
+            </div>
+        </div>
+    </section>
+    <section class="garant" id="garant">
+        <h2 class="titel">НАШИ ГАРАНТИИ</h2>
+        <div class="garant__slider">
+            <button class="arrow garant__arrow"><i class="fas fa-chevron-left"></i></button>
+            <div class="garant__box">
+                 <div class="garant__desc">
+                    <div class="garant__img">
+                        <img src="icons/icon-save.svg" alt="страховка" class="garant__icon">
+                    </div>
+                    <h3 class="garant__name">Страховка отправлений</h3>
+                </div>
+                <p class="garant__text">
+                    Контроль работы курьеров в онлайн режиме. Страхование по запросу клиента Каждый куръер находится под пристальным вниманием менеджеров SendIt.
+                </p>
+                <button class="btn garant__btn">подробнее</button>
+            </div>
+            <div class="garant__box garant__box_2">
+                <div class="garant__desc">
+                   <div class="garant__img">
+                       <img src="icons/icon-open.svg" alt="страховка" class="garant__icon">
+                   </div>
+                   <h3 class="garant__name">Прозрачность расчетов</h3>
+               </div>
+               <p class="garant__text">
+                Чтобы узнать точную стоимость отправления вам не нужно связываться с каждой курьерской службой в отдельности и сравнивать полученные предложения, просто воспользуйтесь нашим сервисом.
+               </p>
+               <button class="btn garant__btn">подробнее</button>
+            </div>
+            <div class="garant__box garant__box_3">
+                <div class="garant__desc">
+                   <div class="garant__img">
+                       <img src="icons/icon-partner.svg" alt="страховка" class="garant__icon">
+                   </div>
+                   <h3 class="garant__name">Лучшие поставщики</h3>
+               </div>
+               <p class="garant__text">
+                Мы работаем с самыми надежными и известными операторами доставки. Проверка надежности курьерской компании, экспертная оценка качества предоставляемых услуг.
+               </p>
+               <button class="btn garant__btn">подробнее</button>
+            </div>
+            <button class="arrow garant__arrow"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+    <section class="faq" id="faq">
+        <h2 class="titel">ОСТАЛИСЬ СОМНЕНИЯ?</h2>
+        <div class="faq__wrap">
+            <details class="faq__detail">
+                <summary class="faq__box">На бумажную волокиту уйдёт много времени, а мне нужно доставить срочно!</summary>
+                <div class="faq__text">Это не так. Вам нужно заполнить и подписать всего один документ, который распространяется на все службы доставки, которые будут доставлять вашу посылку</div>
+            </details>
+            <details class="faq__detail">
+                <summary class="faq__box">Мне необходимо совершить доставку по нескольким адресам, нужно много чего заполнять</summary>
+                <div class="faq__text">Это не так. Вам нужно заполнить и подписать всего один документ, который распространяется на все службы доставки, которые будут доставлять вашу посылку</div>
+            </details>
+            <details class="faq__detail">
+                <summary class="faq__box">Вы не сможете доставить посылку за границу</summary>
+                <div class="faq__text">Это не так. Вам нужно заполнить и подписать всего один документ, который распространяется на все службы доставки, которые будут доставлять вашу посылку</div>
+            </details>
+            <details class="faq__detail">
+                <summary class="faq__box">Вы не занимаетесь такими простыми грузами, как мебель</summary>
+                <div class="faq__text">Это не так. Вам нужно заполнить и подписать всего один документ, который распространяется на все службы доставки, которые будут доставлять вашу посылку</div>
+            </details>
+            <details class="faq__detail">
+                <summary class="faq__box">Я отправляю вместе с коллегами, мы можем легко запутаться где чьё</summary>
+                <div class="faq__text">Это не так. Вам нужно заполнить и подписать всего один документ, который распространяется на все службы доставки, которые будут доставлять вашу посылку</div>
+            </details>
+            <details class="faq__detail">
+                <summary class="faq__box">Нужно заполнять кучу документов</summary>
+                <div class="faq__text">Это не так. Вам нужно заполнить и подписать всего один документ, который распространяется на все службы доставки, которые будут доставлять вашу посылку</div>
+            </details>
+        </div>
+    </section>
+    <div class="partners" id="partners">
+        <div class="partners__slider">
+            <button class="arrow"><i class="fas fa-chevron-left"></i></button>
+            <div class="partners__box">
+                <img src="icons/bringo.svg" alt="bringo" class="partners__icon">
+                <img src="icons/cdek.svg" alt="cdek" class="partners__icon">
+                <img src="icons/city_express.svg" alt="city express" class="partners__icon">
+                <img src="icons/dpd.svg" alt="dpd" class="partners__icon">
+                <img src="icons/pony.svg" alt="pony" class="partners__icon">
+                <img src="icons/spsr.svg" alt="spsr" class="partners__icon">
+                <img src="icons/tnt.svg" alt="tnt" class="partners__icon partners__icon_2">
+                <img src="icons/ups.svg" alt="ups" class="partners__icon partners__icon_2">
+            </div>
+            <button class="arrow"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+    <footer class="footer">
+        <form action="#" class="contact__form contact__form_foot">
+            <p class="contact__titel contact__titel_foot">ОСТАЛИСЬ ВОПРОСЫ?</p>
+            <input type="tel" class="contact__tel contact__tel_foot" placeholder="Ваш телефон">
+            <button class="btn contact__btn" type="submit">заказать звонок</button>
+            <div class="contact__terms">
+                <input type="checkbox" id="footer_terms">
+                <label for="footer_terms" class="contact__checkbox">Я согласен на обработку персональных данных</label>
+            </div>
+        </form>
+        <div class="footer__menu">
+            <a href="index.html"><img src="icons/logo2.png" alt="Логотип"></a>
+            <ul class="menu__list menu__list_foot">
+                <li class="menu__item_1"><a href="index.html" class="menu__link menu__link_foot">Главная</a></li>
+                <li class="menu__item_2"><a href="#about" class="menu__link menu__link_foot">Описание</a></li>
+                <li class="menu__item_3"><a href="#advantage" class="menu__link menu__link_foot">Преимущества</a></li>
+                <li class="menu__item_4"><a href="#feedback" class="menu__link menu__link_foot">Отзывы</a></li>
+                <li class="menu__item_5"><a href="#partners" class="menu__link menu__link_foot">Партнёры</a></li>
+                <li class="menu__item_6"><a href="#garant" class="menu__link menu__link_foot">Гарантии</a></li>
+                <li class="menu__item_7"><a href="#faq" class="menu__link menu__link_foot">FAQ</a></li>
+            </ul>
+            <label for="nav__checkbox" class="nav__open nav__open_foot">&#9776;</label>
+        </div>
+        <div class="footer__bottom">
+            <p class="footer__text footer__text_copy">&copy; Сами копипастим и вам разрешаем</p>
+            <div class="footer__socials">
+                <a href="#" class="footer__socials_vk"><img src="icons/vk.svg" alt="vk"></a>
+                <a href="#" class="footer__socials_inst"><img src="icons/instagram-symbol.svg" alt="in"></a>
+                <a href="#" class="footer__socials_fb"><img src="icons/facebook.svg" alt="fb"></a>
+            </div>
+            <p class="footer__text footer__text_year">2019</p>
+            <p class="footer__text footer__text_design">Задизайнено мной</p>
+        </div>
+    </footer>
+</body>
+</html>

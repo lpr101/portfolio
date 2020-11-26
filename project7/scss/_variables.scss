@@ -1,0 +1,33 @@
+$default-blue: #008DCD;
+$default-orange: #FFCC00;
+$press-blue: #94D1EC;
+$press-orange: #FCE39C;
+$text-color: #363636;
+$time: 0.4s ease;
+
+@mixin fsb {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin fsb-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@mixin ph-hidden {
+    &:focus::placeholder {
+        opacity: 0;
+    }
+}
+
+@mixin actions {
+    transition: background $time, box-shadow $time;
+    &:hover {
+        box-shadow: 0px 0px 20px 4px $press-blue;
+    }
+    &:active {
+        background: $press-blue;
+    }
+}

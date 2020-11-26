@@ -1,0 +1,42 @@
+.feedback {
+    padding: 17px 21px;
+    &__slider {
+        margin: 15px -12px 0;
+        @include fsb;
+    }
+    &__arrow {
+        margin-top: 31px;
+    }
+    &__box {
+        display: flex;
+        flex-direction: column;
+        &_pad {
+            display: none;
+        }
+    }
+    &__desc {
+        padding-left: 119px;
+        height: 100px;
+        @include fsb;
+        flex-direction: column;
+        &_1 {
+            background: url(../img/foto1.jpg) left top no-repeat;
+        }
+        &_2 {
+            background: url(../img/foto2.jpg) left top no-repeat;
+        }
+    }
+    &__name {
+        font-size: 26px;
+    }
+    &__firm {
+        font-size: 18px;
+    }
+    &__post {
+        font-size: 10px;
+    }
+    &__text {
+        margin-top: 13px;
+        line-height: 15px;
+    }
+}

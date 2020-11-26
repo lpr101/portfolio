@@ -1,0 +1,27 @@
+.about {
+    padding: 17px 21px;
+    background: #F7F7F7;
+    @include fsb;
+    flex-direction: column;
+    &__title {
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 22px;
+        order: 2;
+    }
+    &__img {
+        background: url(../img/bg2_mob.png) center center no-repeat;
+        order: 1;
+        width: 100%;
+        height: 142px;
+        margin-bottom: 25px;
+    }
+    &__box {
+        order: 3;
+        margin-top: 20px;
+        line-height: 14px;
+        min-height: 138px;
+        @include fsb;
+        flex-direction: column;
+    }
+}
