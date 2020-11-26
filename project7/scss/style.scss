@@ -226,10 +226,15 @@
     }
     .footer {
         &__bottom {
-            margin: 0 -15px;
         }
         &__text {
             margin: 0 15px;
+            &:last-child {
+                margin-right: 0;
+            }
+            &:first-child {
+                margin-left: 0;
+            }
         }
         &__socials {
             display: flex;
@@ -597,8 +602,7 @@
     .feedback {
         padding: 69px calc(50% - 1160px / 2);
         &__slider {
-            margin: 57px -20px 0;
-            @include fsb;
+            margin: 57px 0 0;
         }
         &__box {
             width: 460px;
@@ -696,6 +700,9 @@
 
     .partners {
         padding: 55px calc(50% - 1160px / 2);
+        &__slider {
+            margin: 0;
+        }
         &__icon {
             width: 94px;
         }
@@ -735,6 +742,20 @@
         }
         &__terms {
             margin-left: 32%;
+        }
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .feedback {
+        &__slider {
+            margin: 57px -20px 0;
+        }
+    }
+
+    .partners {
+        &__slider {
+            margin: 0 -20px;
         }
     }
 }
